@@ -1,15 +1,15 @@
 ---
 date: '4'
-title: 'AI Face Landmark Detection'
+title: 'Three Large-Scale Projects'
 cover: 'face-landmark.png'
 github: 'https://github.com/yashitanamdeo/face-landmark-detection'
-external: 'https://yashitanamdeo.github.io/face-landmark-detection/'
+external: 'https://google.com/'
 tech:
-  - TensorFlow.JS
-  - React
+  - Cloud Computing
+  - Networking
+  - IT Governance
 showInProjects: true
 ---
 
-Facial landmark recognition allows you to detect a number of different points on your face that together make up your eyes, mouth, ears, nose and so on.
-
-Inspired by Nicholas Renotte's [Youtube Tutorial](https://www.youtube.com/watch?v=7lXYGDVHUNw).
+<p align="justify">
+Selected as the first intern ever to work at the World Bank Morocco Office where I had the opportunity to lead impactful contributions to three large-scale projects by working on Cloud Computing and data centers, analyzing the broadband market all while ensuring robust adherence to IT compliance standards.

@@ -122,21 +122,19 @@ const StyledFeaturedImg = styled(Img)`
   `};
 `;
 const StyledImgContainer = styled.a`
-  ${mixins.boxShadow};
   grid-column: 6 / -1;
   grid-row: 1 / -1;
   position: relative;
   z-index: 1;
-  background-color: ${colors.green};
+
   border-radius: ${theme.radius + 1}px;
   transition: ${theme.transition};
   ${media.tablet`height: 100%;`};
   ${media.thone`
     grid-column: 1 / -1;
-    opacity: 0.25;
+    
   `};
-  &:hover,
-  &:focus {
+   {
     background: transparent;
     &:before,
     ${StyledFeaturedImg} {
@@ -155,7 +153,7 @@ const StyledImgContainer = styled.a`
     bottom: 0;
     z-index: 3;
     transition: ${theme.transition};
-    background-color: ${colors.navy};
+
     mix-blend-mode: screen;
   }
 `;
@@ -216,7 +214,7 @@ const Featured = ({ data }) => {
 
   return (
     <StyledContainer id="projects">
-      <Heading ref={revealTitle}>Some Things I&apos;ve Built</Heading>
+      <Heading ref={revealTitle}>Some Things I&apos;ve Worked On</Heading>
 
       <div>
         {featuredProjects &&
@@ -250,15 +248,6 @@ const Featured = ({ data }) => {
                     </StyledTechList>
                   )}
                   <StyledLinkWrapper>
-                    {github && (
-                      <a
-                        href={github}
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                        aria-label="GitHub Link">
-                        <FormattedIcon name="GitHub" />
-                      </a>
-                    )}
                     {external && (
                       <a
                         href={external}

@@ -1,9 +1,9 @@
 ---
 date: '2'
-title: 'Disney+ Clone'
+title: 'Deep Learning models for ADAS'
 cover: './disneyclone.png'
 github: 'https://github.com/yashitanamdeo/Disney-plus-Clone'
-external: 'https://disney-clone-83e44.web.app/'
+external: 'https://google.com/'
 tech:
   - ReactJS
   - Redux
