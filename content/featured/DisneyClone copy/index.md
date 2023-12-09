@@ -1,15 +1,14 @@
 ---
 date: '1'
-title: 'Deep Learning models for ADAS'
+title: 'Transport Management Mobile App'
 cover: './disneyclone.png'
 github: 'https://github.com/yashitanamdeo/Disney-plus-Clone'
 external: 'https://google.com/'
 tech:
-  - PyTorch
-  - OpenCV
-  - CUDA
-  - Albumentations
-  - FPGA
+  - Java for Android Development
+  - Firebase
+  - Google API
+
 showInProjects: true
 ---
 
