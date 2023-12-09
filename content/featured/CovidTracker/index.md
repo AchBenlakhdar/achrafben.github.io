@@ -1,18 +1,21 @@
 ---
 date: '1'
-title: 'Covid-19 Tracker'
-cover: 'demo1.png'
+title: 'Car Rental SaaS'
+cover: 'demo2.png'
 github: 'https://github.com/yashitanamdeo/Covid19-tracker'
-external: 'https://covid19-tracker-84ef4.web.app/'
+external: 'https://google.com/'
 tech:
   - ReactJS
-  - Firebase
-  - Material UI
+  - Express
+  - NodeJS
+  - MongoDB
+  - REST API
+  - Figma
 
 showInProjects: true
 ---
 
-Designed and implemented React-based Web Application to monitor live corona cases, recoveries, and
-deaths(clickable tabs) in 180+ countries worldwide. Directed to display 2 features – worldwide cases and countries based report; clickable markers on the map to show country stats and line chart for fluctuations over days, on hover, gives exact figures.
-
-Inspired by Clever Programmer's [Youtube Channel](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ).
+<p align="justify">
+Designed and co-developed a car rental SaaS platform from the ground up using React and Node.js, employing a REST
+protocol architecture. The server-side business logic, made with Express, seamlessly interacts with the user interface built on React, ensuring a user-friendly experience for customers. Emphasizing security, we implemented robust APIs for sensitive user data retrieval and updates, incorporating secure authentication and authorization mechanisms through Passport, JWT, and Google OAuth 2.0 API. Throughout the development process, we embraced the Scrum methodology, fostering an Agile environment to ensure the project's success.
+</p>
