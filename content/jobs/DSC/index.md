@@ -1,6 +1,6 @@
 ---
 date: '2020-09-21'
-title: 'Machine Learning'
+title: 'Machine Learning Intern'
 company: '3D Smart Factory'
 location: remote
 range: '2023 · June - September'
