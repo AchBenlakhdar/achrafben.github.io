@@ -1,14 +1,14 @@
 ---
 date: '2020-07-01'
-title: 'Virtual Internship Experience'
-company: 'Forage'
+title: 'Full Stack Developer Intern'
+company: 'Carloc'
 location: remote
-range: 'July 2020 - May 2021'
-url: 'https://www.theforage.com/'
+range: '2023 · April - August'
+url: 'https://reservation.carloc.ma/'
 ---
 
-- Microsoft - Engineering Virtual Experience [CERTIFICATE](https://insidesherpa.s3.amazonaws.com/completion-certificates/Microsoft/ms2CK9b2SCWGXwPMS_Microsoft_nXPiDeZbPmvKvvjHA_completion_certificate.pdf)
-- Deloitte - Technology Consulting Virtual Internship [CERTIFICATE](https://insidesherpa.s3.amazonaws.com/completion-certificates/Deloitte/FqFtWwQzNxJ8Qsh5H_Deloitte_nXPiDeZbPmvKvvjHA_completion_certificate.pdf)
-- JPMorgan Chase & Co. Software Engineering Virtual Experience [CERTIFICATE](https://insidesherpa.s3.amazonaws.com/completion-certificates/JP%20Morgan/R5iK7HMxJGBgaSbvk_JPMorgan%20Chase_nXPiDeZbPmvKvvjHA_completion_certificate.pdf)
-- KPMG - Data Analytics Consulting Virtual Internship [CERTIFICATE](https://insidesherpa.s3.amazonaws.com/completion-certificates/KPMG/m7W4GMqeT3bh9Nb2c_KPMG_nXPiDeZbPmvKvvjHA_completion_certificate.pdf)
-- Y Combinator Virtual Experience [CERTIFICATE](https://drive.google.com/file/d/1btrRl7BWopLhOWudEI1RTOSl7qsCl-yS/view)
+- <p align="justify">Designed and co-developed a car rental SaaS platform from the ground up using React and Node.js, employing a
+  REST protocol architecture.</p>
+- <p align="justify">Implemented secure APIs for sensitive user data retrieval and updates, while ensuring robust authentication and authorization using Passport, JWT, and Google OAuth 2.0 API.</p>
+- <p align="justify">Used Scrum methodology to develop the project in an Agile environment.</p>
+- <p align="justify">Utilized: React, Express, Node.js, MongoDB, REST API, Git, Jira, Figma.</p>

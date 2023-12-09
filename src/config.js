@@ -1,16 +1,16 @@
 module.exports = {
-  siteTitle: 'Yashita Namdeo',
+  siteTitle: 'Achraf Benlakhdar',
   siteDescription:
     'Yashita Namdeo is an incoming Software Developer, based in India, who loves learning new things and helping tech beginners.',
   siteKeywords:
-    'Yashita Namdeo, Yashita, Namdeo, yashitanamdeo, software engineer, web developer, javascript, python, java, svvv, indore',
-  siteUrl: 'https://yashitanamdeo.github.io/',
+    'Achraf Benlakhdar, Achraf, benlakhdar, achrafben, software engineer, web developer, IT Consultant, python, java',
+  siteUrl: 'https://achrafben.github.io/',
   siteLanguage: 'en_US',
   googleAnalyticsID: 'UA-45666519-2',
   googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
-  name: 'Yashita Namdeo',
-  location: 'Indore, India',
-  email: 'yashita.namdeo2000@gmail.com',
+  name: 'Achraf Benlakhdar',
+  location: 'Morocco',
+  email: 'achrafbenlakhdar09@gmail.com',
   github: 'https://github.com/yashitanamdeo',
   twitterHandle: '@',
   socialMedia: [
@@ -20,7 +20,7 @@ module.exports = {
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/yashitanamdeo/',
+      url: 'https://www.linkedin.com/in/achraf-benlakhdar/',
     },
     {
       name: 'Codepen',
