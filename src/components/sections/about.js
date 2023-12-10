@@ -25,7 +25,7 @@ const StyledContent = styled.div`
 `;
 const SkillsContainer = styled.ul`
   display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 200px));
+  grid-template-columns: repeat(1, minmax(400px, 800px));
   overflow: hidden;
   padding: 0;
   margin: 20px 0 0 0;
@@ -114,7 +114,7 @@ const StyledAvatarLink = styled.a`
 
 const About = ({ data }) => {
   const { frontmatter, html } = data[0].node;
-  const { title, skills, avatar } = frontmatter;
+  const { title, avatar } = frontmatter;
   const revealContainer = useRef(null);
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
 
@@ -124,9 +124,50 @@ const About = ({ data }) => {
       <StyledFlexContainer>
         <StyledContent>
           <div dangerouslySetInnerHTML={{ __html: html }} />
-          <SkillsContainer>
-            {skills && skills.map((skill, i) => <Skill key={i}>{skill}</Skill>)}
-          </SkillsContainer>
+
+          {
+            <SkillsContainer>
+              <Skill>
+                {`${'Back-End Development'}: `}
+                <span style={{ color: 'white' }}>
+                  {'Java | Node.js | Python | C++ | Java EE | Spring Boot'}
+                </span>
+              </Skill>
+
+              <Skill>
+                {`${'Front-End Development'}: `}
+                <span style={{ color: 'white' }}>
+                  {'React | Angular | Flutter | Bootstrap | JSP'}
+                </span>
+              </Skill>
+              <Skill>
+                {`${'Database Management'}: `}
+                <span style={{ color: 'white' }}>
+                  {'MySQL | PostgreSQL | MongoDB | Oracle Database | PL/SQL  '}
+                </span>
+              </Skill>
+
+              <Skill>
+                {`${'Data Science and Machine Learning'}: `}
+                <span style={{ color: 'white' }}>
+                  {'Python(Pandas, NumPy) | Scikit-learn | TensorFlow | PyTorch | Keras | OpenCV'}
+                </span>
+              </Skill>
+              <Skill>
+                {`${'Big Data & Distributed Computing'}: `}
+                <span style={{ color: 'white' }}>{'Hadoop | Spark | Redis | Apache Kafka'}</span>
+              </Skill>
+
+              <Skill>
+                {`${'IT Governance & IT Audit'}: `}
+                <span style={{ color: 'white' }}>
+                  {'Knowledge of ITIL | ISO 27001 | Risk Management | ISACA’s IT Audit Standards'}
+                </span>
+              </Skill>
+
+              {/* Add more skills as needed */}
+            </SkillsContainer>
+          }
         </StyledContent>
         <StyledPic>
           <StyledAvatarLink href={github}>

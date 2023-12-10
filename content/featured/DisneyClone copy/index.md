@@ -7,7 +7,7 @@ external: 'https://google.com/'
 tech:
   - Java for Android Development
   - Firebase
-  - Google API
+  - Google Maps API
 
 showInProjects: true
 ---
