@@ -32,7 +32,7 @@ const StyledLabel = styled.h4`
   margin-top: 10px;
   padding-top: 0;
 `;
-const StyledProjectName = styled.h5`
+export const StyledProjectName = styled.h5`
   font-size: 28px;
   margin: 0 0 20px;
   color: ${colors.lightestSlate};

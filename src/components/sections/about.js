@@ -164,8 +164,6 @@ const About = ({ data }) => {
                   {'Knowledge of ITIL | ISO 27001 | Risk Management | ISACA’s IT Audit Standards'}
                 </span>
               </Skill>
-
-              {/* Add more skills as needed */}
             </SkillsContainer>
           }
         </StyledContent>
