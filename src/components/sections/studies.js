@@ -1,10 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
+
 import sr from '@utils/sr';
-import { srConfig, github } from '@config';
+import { srConfig } from '@config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '@styles';
+import Image from './Smartcycle.png';
+
 const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
@@ -60,57 +62,7 @@ const StyledPic = styled.div`
     }
   }
 `;
-const StyledAvatar = styled(Img)`
-  position: relative;
-  mix-blend-mode: multiply;
-  filter: grayscale(100%) contrast(1);
-  border-radius: ${theme.borderRadius};
-  transition: ${theme.transition};
-`;
-const StyledAvatarLink = styled.a`
-  ${mixins.boxShadow};
-  width: 100%;
-  position: relative;
-  border-radius: ${theme.borderRadius};
-  background-color: ${colors.lightestSlate};
-  margin-left: -20px;
-  &:hover,
-  &:focus {
-    background: transparent;
-    &:after {
-      top: 15px;
-      left: 15px;
-    }
-    ${StyledAvatar} {
-      filter: none;
-      mix-blend-mode: normal;
-    }
-  }
-  &:before,
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: ${theme.borderRadius};
-    transition: ${theme.transition};
-  }
-  &:before {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: ${colors.navy};
-    mix-blend-mode: screen;
-  }
-  &:after {
-    border: 2px solid ${colors.green};
-    top: 10px;
-    left: 10px;
-    z-index: -1;
-  }
-`;
+
 const StyledTitle = styled.h4`
   margin: 0 auto;
   font-size: ${fontSizes.h3};
@@ -120,10 +72,12 @@ const StyledTitle = styled.h4`
   }
 `;
 
-const Studies = ({ data }) => {
-  const { frontmatter } = data[0].node;
-  const { avatar } = frontmatter;
+const Studies = () => {
   const revealContainer = useRef(null);
+  const imageStyle = {
+    width: '100%', // Adjust this value to make the image wider or narrower
+    height: '100%', // Maintain the aspect ratio
+  };
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
 
   return (
@@ -137,9 +91,13 @@ const Studies = ({ data }) => {
               <Skill>
                 {`${'1st Prize'}: `}
                 <span style={{ color: 'white' }}>
-                  {
-                    'Designed a waste management solution integrating artificial intelligence, computer vision, and Internet of Things(IoT) to enable real-time advanced sorting and recycling.'
-                  }
+                  <ul>
+                    <li>
+                      {
+                        'Designed a waste management solution integrating artificial intelligence, computer vision, and Internet of Things(IoT) to enable real-time advanced sorting and recycling.'
+                      }
+                    </li>
+                  </ul>
                 </span>
                 <br /> <br /> <br />
               </Skill>
@@ -149,20 +107,30 @@ const Studies = ({ data }) => {
           {
             <SkillsContainer>
               <Skill>
-                {`${'1st Prize'}: `}
+                {`${'3rd Prize'}: `}
                 <span style={{ color: 'white' }}>
-                  {
-                    'Designed a waste management solution integrating artificial intelligence, computer vision, and Internet of Things(IoT) to enable real-time advanced sorting and recycling.'
-                  }
+                  <ul>
+                    <li>
+                      {
+                        'Ranked 3rd out of 45 participants from prestigious business and engineering schools across various European and African countries.'
+                      }
+                    </li>
+                  </ul>
                 </span>
+                <br />
+                <ul>
+                  <li style={{ color: 'white' }}>
+                    {
+                      'Demonstrated strong analytical and strategic thinking skills by developing a compelling business model canvas and engaging in strategic business games.'
+                    }
+                  </li>
+                </ul>
               </Skill>
             </SkillsContainer>
           }
         </StyledContent>
         <StyledPic>
-          <StyledAvatarLink href={github}>
-            <StyledAvatar fluid={avatar.childImageSharp.fluid} alt="Avatar" />
-          </StyledAvatarLink>
+          <img src={Image} alt="." style={imageStyle} />
         </StyledPic>
       </StyledFlexContainer>
     </StyledContainer>
