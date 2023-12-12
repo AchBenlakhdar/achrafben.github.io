@@ -6,6 +6,7 @@ import { srConfig } from '@config';
 import { FormattedIcon } from '@components/icons';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '@styles';
+
 const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
@@ -13,17 +14,33 @@ const StyledContainer = styled(Section)`
   flex-direction: column;
   align-items: flex-start;
 `;
+
+const StyledProject = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+  ${media.thone`
+    margin-bottom: 70px;
+  `};
+`;
+
 const StyledContent = styled.div`
   position: relative;
   grid-column: 1 / 7;
   grid-row: 1 / -1;
+
   ${media.thone`
     grid-column: 1 / -1;
     padding: 40px 40px 30px;
     z-index: 5;
   `};
-  ${media.phablet`padding: 30px 25px 20px;`};
+
+  ${media.phablet`
+    padding: 30px 25px 20px;
+  `};
 `;
+
 const StyledLabel = styled.h4`
   font-size: ${fontSizes.smish};
   font-weight: normal;
@@ -32,16 +49,27 @@ const StyledLabel = styled.h4`
   margin-top: 10px;
   padding-top: 0;
 `;
-export const StyledProjectName = styled.h5`
+
+const StyledProjectName = styled.h5`
   font-size: 28px;
   margin: 0 0 20px;
   color: ${colors.lightestSlate};
-  ${media.tablet`font-size: 24px;`};
-  ${media.thone`color: ${colors.white};`};
+
+  ${media.tablet`
+    font-size: 24px;
+  `};
+
+  ${media.thone`
+    color: ${colors.white};
+  `};
+
   a {
-    ${media.tablet`display: block;`};
+    ${media.tablet`
+      display: block;
+    `};
   }
 `;
+
 const StyledDescription = styled.div`
   ${mixins.boxShadow};
   position: relative;
@@ -51,21 +79,26 @@ const StyledDescription = styled.div`
   color: ${colors.lightSlate};
   font-size: ${fontSizes.lg};
   border-radius: ${theme.borderRadius};
+
   ${media.thone`
     background-color: transparent;
     padding: 20px 0;
     box-shadow: none;
+
     &:hover {
       box-shadow: none;
     }
   `};
+
   p {
     margin: 0;
   }
+
   a {
     ${mixins.inlineLink};
   }
 `;
+
 const StyledTechList = styled.ul`
   position: relative;
   z-index: 2;
@@ -82,15 +115,18 @@ const StyledTechList = styled.ul`
     margin-right: ${theme.margin};
     margin-bottom: 7px;
     white-space: nowrap;
+
     &:last-of-type {
       margin-right: 0;
     }
+
     ${media.thone`
       color: ${colors.green};
       margin-right: 10px;
     `};
   }
 `;
+
 const StyledLinkWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -98,108 +134,55 @@ const StyledLinkWrapper = styled.div`
   margin-top: 10px;
   margin-left: -10px;
   color: ${colors.lightestSlate};
+
   a {
     padding: 10px;
+
     svg {
       width: 22px;
       height: 22px;
     }
   }
 `;
+
 const StyledFeaturedImg = styled(Img)`
   width: 100%;
-  max-width: 100%;
+  max-width: 80%;
   vertical-align: middle;
   border-radius: ${theme.borderRadius};
   position: relative;
   mix-blend-mode: multiply;
-  filter: grayscale(100%) contrast(1) brightness(90%);
+  margin-left: auto;
+  margin-right: auto;
+
   ${media.tablet`
     object-fit: cover;
     width: auto;
     height: 100%;
-    filter: grayscale(100%) contrast(1) brightness(80%);
+    
+  `};
+
+  ${media.thone`
+    max-width: 100%; /* Set the maximum width for small screens */
   `};
 `;
+
 const StyledImgContainer = styled.a`
   grid-column: 6 / -1;
   grid-row: 1 / -1;
   position: relative;
   z-index: 1;
-
   border-radius: ${theme.radius + 1}px;
   transition: ${theme.transition};
-  ${media.tablet`height: 100%;`};
+
+  ${media.tablet`
+    height: 100%;
+  `};
+
   ${media.thone`
     grid-column: 1 / -1;
-    
+    margin-top: 20px;
   `};
-   {
-    background: transparent;
-    &:before,
-    ${StyledFeaturedImg} {
-      background: transparent;
-      filter: none;
-    }
-  }
-  &:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
-    transition: ${theme.transition};
-
-    mix-blend-mode: screen;
-  }
-`;
-const StyledProject = styled.div`
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(12, 1fr);
-  align-items: center;
-  margin-bottom: 100px;
-  ${media.thone`
-    margin-bottom: 70px;
-  `};
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-  &:nth-of-type(odd) {
-    ${StyledContent} {
-      grid-column: 7 / -1;
-      text-align: right;
-      ${media.thone`
-        grid-column: 1 / -1;
-        padding: 40px 40px 30px;
-      `};
-      ${media.phablet`padding: 30px 25px 20px;`};
-    }
-    ${StyledTechList} {
-      justify-content: flex-end;
-      li {
-        margin-left: ${theme.margin};
-        margin-right: 0;
-      }
-    }
-    ${StyledLinkWrapper} {
-      justify-content: flex-end;
-      margin-left: 0;
-      margin-right: -10px;
-    }
-    ${StyledImgContainer} {
-      grid-column: 1 / 8;
-      ${media.tablet`height: 100%;`};
-      ${media.thone`
-        grid-column: 1 / -1;
-        opacity: 0.25;
-      `};
-    }
-  }
 `;
 
 const Featured = ({ data }) => {
@@ -207,6 +190,7 @@ const Featured = ({ data }) => {
 
   const revealTitle = useRef(null);
   const revealProjects = useRef([]);
+
   useEffect(() => {
     sr.reveal(revealTitle.current, srConfig());
     revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
@@ -240,6 +224,7 @@ const Featured = ({ data }) => {
                     )}
                   </StyledProjectName>
                   <StyledDescription dangerouslySetInnerHTML={{ __html: html }} />
+
                   {tech && (
                     <StyledTechList>
                       {tech.map((tech, i) => (
@@ -247,6 +232,7 @@ const Featured = ({ data }) => {
                       ))}
                     </StyledTechList>
                   )}
+
                   <StyledLinkWrapper>
                     {external && (
                       <a
