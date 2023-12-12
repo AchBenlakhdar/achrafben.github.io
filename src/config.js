@@ -15,24 +15,21 @@ module.exports = {
   twitterHandle: '@',
   socialMedia: [
     {
-      name: 'GitHub',
-      url: 'https://github.com/yashitanamdeo',
-    },
-    {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/achraf-benlakhdar/',
     },
     {
       name: 'Codepen',
-      url: 'https://codepen.io/yashitanamdeo',
+      url: 'mailto:achrafbenlakhdar09@gmail.com',
     },
     {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/yashitanamdeo',
+      name: 'GitHub',
+      url: 'https://github.com/AchBenlakhdar',
     },
+
     {
       name: 'Twitter',
-      url: 'https://twitter.com/',
+      url: 'https://www.twitter.com/Ach_Ben01',
     },
   ],
 

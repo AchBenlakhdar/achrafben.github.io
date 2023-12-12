@@ -3,4 +3,4 @@ title: 'Get In Touch'
 buttonText: 'Mail Me'
 ---
 
-My inbox is always open. Whether you have a question or just want to say hello, I'll try my best to get back to you! Feel free to mail me about any relevant job updates.
+Feel free to reach out at any time! Whether you have an internship opportunity to discuss or just want to say hello, my inbox is always open. I look forward to hearing from you and appreciate any relevant internship updates you may have.
