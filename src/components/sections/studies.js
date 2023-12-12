@@ -111,6 +111,14 @@ const StyledAvatarLink = styled.a`
     z-index: -1;
   }
 `;
+const StyledTitle = styled.h4`
+  margin: 0 auto;
+  font-size: ${fontSizes.h3};
+  ${media.tablet`font-size: 24px;`};
+  a {
+    display: block;
+  }
+`;
 
 const Studies = ({ data }) => {
   const { frontmatter } = data[0].node;
@@ -123,43 +131,29 @@ const Studies = ({ data }) => {
       <Heading>{'Honors & Awards'}</Heading>
       <StyledFlexContainer>
         <StyledContent>
+          <StyledTitle>- Africa Smart City Hackathon</StyledTitle>
           {
             <SkillsContainer>
               <Skill>
-                {`${'Back-End Development'}: `}
+                {`${'1st Prize'}: `}
                 <span style={{ color: 'white' }}>
-                  {'Java | Node.js | Python | C++ | Java EE | Spring Boot'}
+                  {
+                    'Designed a waste management solution integrating artificial intelligence, computer vision, and Internet of Things(IoT) to enable real-time advanced sorting and recycling.'
+                  }
                 </span>
+                <br /> <br /> <br />
               </Skill>
-
+            </SkillsContainer>
+          }
+          <StyledTitle>- Attijari Startup Game </StyledTitle>
+          {
+            <SkillsContainer>
               <Skill>
-                {`${'Front-End Development'}: `}
+                {`${'1st Prize'}: `}
                 <span style={{ color: 'white' }}>
-                  {'React | Angular | Flutter | Bootstrap | JSP'}
-                </span>
-              </Skill>
-              <Skill>
-                {`${'Database Management'}: `}
-                <span style={{ color: 'white' }}>
-                  {'MySQL | PostgreSQL | MongoDB | Oracle Database | PL/SQL  '}
-                </span>
-              </Skill>
-
-              <Skill>
-                {`${'Data Science and Machine Learning'}: `}
-                <span style={{ color: 'white' }}>
-                  {'Python(Pandas, NumPy) | Scikit-learn | TensorFlow | PyTorch | Keras | OpenCV'}
-                </span>
-              </Skill>
-              <Skill>
-                {`${'Big Data & Distributed Computing'}: `}
-                <span style={{ color: 'white' }}>{'Hadoop | Spark | Redis | Apache Kafka'}</span>
-              </Skill>
-
-              <Skill>
-                {`${'IT Governance & IT Audit'}: `}
-                <span style={{ color: 'white' }}>
-                  {'Knowledge of ITIL | ISO 27001 | Risk Management | ISACA’s IT Audit Standards'}
+                  {
+                    'Designed a waste management solution integrating artificial intelligence, computer vision, and Internet of Things(IoT) to enable real-time advanced sorting and recycling.'
+                  }
                 </span>
               </Skill>
             </SkillsContainer>
