@@ -11,7 +11,7 @@ skills:
   - Mentoring
 ---
 
-Hello! I'm Achraf Benlakhdar and I'm currently pursuing my Master's Degree in Computer Science.
+Helll! I'm Achraf Benlakhdar and I'm currently pursuing my Master's Degree in Computer Science.
 
 <p align="justify">
 Throughout my career, I have demonstrated a strong passion for Software Development and a commitment to achieving excellence through data-driven outcomes. My internship experiences have honed my ability to work in a diverse and multicultiral environment, communicate effectively and apply software engineering skills to various scenarios.</p>
