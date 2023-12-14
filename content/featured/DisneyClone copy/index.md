@@ -3,7 +3,7 @@ date: '1'
 title: 'Transport Management Mobile App'
 cover: './disneyclone.png'
 github: 'https://github.com/yashitanamdeo/Disney-plus-Clone'
-external: 'https://google.com/'
+external: '/404'
 tech:
   - Java for Android Development
   - Firebase

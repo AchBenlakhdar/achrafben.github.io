@@ -3,7 +3,7 @@ date: '4'
 title: 'Three Large-Scale Projects'
 cover: 'face-landmark.png'
 github: 'https://github.com/yashitanamdeo/face-landmark-detection'
-external: 'https://google.com/'
+external: '/404'
 tech:
   - Cloud Computing
   - Networking

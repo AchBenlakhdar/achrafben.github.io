@@ -3,7 +3,7 @@ date: '1'
 title: 'P&G Case Study'
 cover: './disneyclone1.png'
 github: 'https://github.com/yashitanamdeo/Disney-plus-Clone'
-external: 'https://google.com/'
+external: '/404'
 tech:
   - Market Analysis
   - Business Strategy Development

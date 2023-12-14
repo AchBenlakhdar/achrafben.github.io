@@ -3,7 +3,7 @@ date: '1'
 title: 'Car Rental SaaS'
 cover: 'demo1.png'
 github: 'https://github.com/yashitanamdeo/Covid19-tracker'
-external: 'https://google.com/'
+external: '/404'
 tech:
   - ReactJS
   - Express
