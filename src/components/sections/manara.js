@@ -197,8 +197,8 @@ const Manara = ({ data }) => {
   }, []);
 
   return (
-    <StyledContainer id="projects">
-      <Heading ref={revealTitle}>Other Noteworthy achievements</Heading>
+    <StyledContainer id="manara">
+      <Heading ref={revealTitle}>Other Noteworthy Achievements</Heading>
 
       <div>
         {featuredProjects &&

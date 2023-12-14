@@ -22,6 +22,7 @@ const StyledTitle = styled.h1`
 const StyledSubtitle = styled.h2`
   font-size: 3vw;
   font-weight: 400;
+  text-align: center;
   ${media.bigDesktop`font-size: 50px;`};
   ${media.phablet`font-size: 30px;`};
 `;
@@ -44,8 +45,12 @@ const NotFoundPage = ({ location }) => {
         {isMounted && (
           <CSSTransition timeout={500} classNames="fade">
             <StyledMainContainer className="fillHeight">
-              <StyledTitle>404</StyledTitle>
-              <StyledSubtitle>Page Not Found</StyledSubtitle>
+              <StyledTitle>Oops!</StyledTitle>
+              <StyledSubtitle>
+                {' '}
+                It seems like the details for this project are still in the works. Stay tuned for
+                updates!
+              </StyledSubtitle>
               <StyledHomeButton to="/">Go Home</StyledHomeButton>
             </StyledMainContainer>
           </CSSTransition>

@@ -47,6 +47,14 @@ module.exports = {
       url: '/#projects',
     },
     {
+      name: 'Honors & Awards',
+      url: '/#honorsnawards',
+    },
+    {
+      name: 'Other',
+      url: '/#manara',
+    },
+    {
       name: 'Contact',
       url: '/#contact',
     },

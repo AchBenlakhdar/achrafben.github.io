@@ -6,6 +6,7 @@ import { srConfig } from '@config';
 import { FormattedIcon } from '@components/icons';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '@styles';
+import { Link } from 'gatsby';
 
 const { colors, fontSizes, fonts } = theme;
 
@@ -234,15 +235,11 @@ const Featured = ({ data }) => {
                   )}
 
                   <StyledLinkWrapper>
-                    {external && (
-                      <a
-                        href={external}
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                        aria-label="External Link">
-                        <FormattedIcon name="External" />
-                      </a>
-                    )}
+                    <Link to="/404">
+                      {' '}
+                      {/* Change "/404" to the actual path of your 404 page */}
+                      <FormattedIcon name="External" />
+                    </Link>
                   </StyledLinkWrapper>
                 </StyledContent>
 

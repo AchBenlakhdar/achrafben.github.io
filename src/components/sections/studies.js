@@ -81,7 +81,7 @@ const Studies = () => {
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
 
   return (
-    <StyledContainer id="about" ref={revealContainer}>
+    <StyledContainer id="honorsnawards" ref={revealContainer}>
       <Heading>{'Honors & Awards'}</Heading>
       <StyledFlexContainer>
         <StyledContent>
