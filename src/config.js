@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'Achraf Benlakhdar',
   siteDescription:
-    'Yashita Namdeo is an incoming Software Developer, based in India, who loves learning new things and helping tech beginners.',
+    'Achraf Benlakhdar is Software Developer who loves building IT solutions to solve real-world complex problems.',
   siteKeywords:
     'Achraf Benlakhdar, Achraf, benlakhdar, achrafben, software engineer, web developer, IT Consultant, python, java',
   siteUrl: 'https://achrafben.github.io/',
